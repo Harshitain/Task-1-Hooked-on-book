@@ -1,0 +1,163 @@
+/* Global styles */
+body {
+  font-family: 'Cinzel Decorative', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-image: url('sky moonlight nature night stars clouds rain landscape moon wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Navigation styles */
+nav {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.book-item {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book-item:hover {
+  transform: scale(1.05);
+}
+
+.main-image img,
+.additional-images img {
+  max-width: 100%;
+  height: auto;
+}
+
+.additional-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.book-item:hover .additional-images {
+  opacity: 1;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.modal-footer {
+  margin-top: 20px;
+}
+
+.share-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for small screens */
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    padding: 5px;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+}
